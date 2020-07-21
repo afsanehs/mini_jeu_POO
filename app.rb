@@ -30,5 +30,3 @@ end
 
 intro
 game
-
-binding.pry

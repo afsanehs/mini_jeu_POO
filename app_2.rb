@@ -11,10 +11,11 @@ def intro
     puts "-------------------------------------------------"
 end
 
-def initialize 
+def ask_name 
     puts "Quel est ton prénom?"
     player1 = HumanPlayer.new(gets.chomp)
 end
 
-binding.pry
+intro 
+ask_name
 
