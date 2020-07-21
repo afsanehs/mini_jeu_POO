@@ -18,14 +18,17 @@ def game
     while @player1.life_points > 0 && @player2.life_points >0 do
         puts "Passons à la phase d'attaque :"
         puts @player1.attacks(@player2)
-        if !(@player2.life_points >0)
+        puts @player2.show_state
+        if @player2.life_points <= 0
             break
         end
         puts @player2.attacks(@player1)
         puts @player1.show_state
-        puts @player2.show_state
         sleep 1
     end
 end
+
+intro
+game
 
 binding.pry
