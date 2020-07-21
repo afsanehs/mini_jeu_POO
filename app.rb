@@ -4,7 +4,7 @@ Bundler.require
 require_relative 'lib/game'
 require_relative 'lib/player'
 
-#intro
+#intro defines names for the two players
 def intro 
     @player1 = Player.new("Josiane")
     puts "à ma droite Josiane"
@@ -12,7 +12,7 @@ def intro
     puts "à ma gauche José"
 end
 
-#game 
+#game uses methods from player file to simulate the game and end it when one player reaches 0 points
 def game  
     puts "Voici l'état de chaque joueur :"
     while @player1.life_points > 0 && @player2.life_points >0 do
