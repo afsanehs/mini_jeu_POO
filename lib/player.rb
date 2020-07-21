@@ -1,5 +1,6 @@
 require "pry"
 
+#defines methods for instances variables
 class Player
     attr_accessor :name, :life_points
     def initialize(name_to_save)
