@@ -19,3 +19,4 @@ end
 intro 
 ask_name
 
+binding.pry
